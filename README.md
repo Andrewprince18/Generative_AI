@@ -133,7 +133,7 @@ pip install torch numpy matplotlib seaborn
 pip install requests matplotlib pandas
 ```
 
-## 6. 進階版對話機器人
+## 6. 進階版互動式對話機器人
 
 **用途**  
 本專案示範如何使用 **Ollama** 與 OpenAI API 建立一個進階版對話機器人，支援 **持續對話功能**，可保留上下文訊息，讓回覆更自然流暢。  
