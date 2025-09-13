@@ -17,7 +17,7 @@
 3. [GAN 基礎實作](#3-GAN-基礎實作)  
 4. [Prompt 測試基準](#4-模型-Prompt-測試基準)  
 5. [互動式對話機器人](#5-互動式對話機器人)
-6. [](#)
+6. [進階版互動式對話機器人](#6-進階版互動式對話機器人)
 7. [](#)
 8. [](#)
 9. [](#)
@@ -132,3 +132,28 @@ pip install torch numpy matplotlib seaborn
 ```bash
 pip install requests matplotlib pandas
 ```
+
+## 6. 進階版對話機器人
+
+**用途**  
+本專案示範如何使用 **Ollama** 與 OpenAI API 建立一個進階版對話機器人，支援 **持續對話功能**，可保留上下文訊息，讓回覆更自然流暢。  
+
+**特色**  
+- 使用 **Ollama** 安裝與執行本地模型伺服器。  
+- 採用 `gemma3:4b` 模型。  
+- 支援 **持續對話 (contextual conversation)**，能保留對話歷史。  
+- 可於 **Google Colab** 環境執行。  
+- 結合 **OpenAI API**，提供混合式聊天體驗。  
+
+### ⚙️ 環境需求
+- Python 3.8+  
+- 工具：Ollama、Colab  
+- 套件：`requests`、`os`、`matplotlib`、`pandas`  
+
+### 💻 安裝與設定
+安裝 **Ollama**：  
+   ```bash
+   curl -fsSL https://ollama.ai/install.sh | sh
+   nohup ollama serve &
+   ollama pull gemma3:4b
+   ```
