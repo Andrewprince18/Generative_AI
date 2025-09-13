@@ -37,7 +37,7 @@
 ### 安裝
 ```bash
 pip install numpy pandas matplotlib seaborn scipy
-
+```
 
 ## 2. DNN 手寫數字辨識
 
@@ -61,4 +61,3 @@ pip install numpy pandas matplotlib seaborn scipy
 ### 安裝
 ```bash
 pip install tensorflow numpy matplotlib pillow gradio ipywidgets
-
