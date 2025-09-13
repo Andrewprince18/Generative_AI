@@ -12,8 +12,8 @@
 
 ## 目錄 (Table of Contents)
 
-1. [Beta 分布函數圖形繪製](#1-函數圖形繪製)  
-2. [專案 2：xxxx]  
+1. [函數圖形繪製](#1-函數圖形繪製)  
+2. [DNN 手寫數字辨識](#2-DNN-手寫數字辨識)  
 3. [專案 3：xxxx]  
 4. [專案 4：xxxx]  
 ⋮  
@@ -37,3 +37,28 @@
 ### 安裝
 ```bash
 pip install numpy pandas matplotlib seaborn scipy
+
+
+## 2. DNN 手寫數字辨識
+
+**用途**：  
+本專案利用 **深度神經網路 (Deep Neural Network, DNN)** 訓練與測試 MNIST 手寫數字資料集，並提供互動式介面，讓使用者可以即時手寫數字並進行辨識。  
+
+**特色**：  
+- 採用 4 層全連接神經網路：  
+  - 第一層：256 個神經元  
+  - 第二層：128 個神經元  
+  - 第三層：64 個神經元  
+  - 第四層：32 個神經元  
+- 使用 **MNIST 資料集**進行訓練與測試。  
+- 提供 **Gradio 互動式介面**，可直接手寫輸入數字並辨識結果。  
+- 使用 `TensorFlow/Keras` 架構，程式結構清晰。  
+
+### 環境需求
+- Python 3.8+  
+- 套件：`tensorflow`、`numpy`、`matplotlib`、`PIL`、`gradio`、`ipywidgets`
+
+### 安裝
+```bash
+pip install tensorflow numpy matplotlib pillow gradio ipywidgets
+
