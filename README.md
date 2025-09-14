@@ -174,7 +174,8 @@ pip install requests matplotlib pandas
   - 「悲傷的台灣流行歌」  
 
 ### 系統架構圖
-![RAG 架構](7_RAG/rag_Image.png)
+<img src="7_RAG/rag_Image.png" alt="RAG 架構" width="70%"/>
+
 
 ---
 
