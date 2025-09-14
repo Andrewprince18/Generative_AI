@@ -23,7 +23,7 @@
 9. [AI 圖像生成](#9-AI-圖像生成)
 10. [Stable Diffusion 插畫生成器](#10-Stable-Diffusion-插畫生成器)
 11. [Fooocus Workflow 圖像生成創作](#11-Fooocus-Workflow-圖像生成創作)
-12. [健康知識與症狀導引系統](#12-Final-健康知識與症狀導引系統)
+12. [健康知識與症狀導引系統](#12-健康知識與症狀導引系統)
 ---
 
 ## 1. 函數圖形繪製
@@ -336,7 +336,7 @@ pip install diffusers transformers accelerate safetensors gradio
 - Faceswap 能顯著提升人像相似度，但僅靠圖片輸入時結果不穩定  
 - 適合用於 **創意嘗試** 與 **風格比較**，上手容易，靈活度高  
 
-## Final. 健康知識與症狀導引系統
+## 12. 健康知識與症狀導引系統
 
 **用途**  
 本專案建立一套具備 **中文語意理解** 的健康資訊查詢系統，整合 RAG 架構與 2-Stage CoT 推理機制，能夠依據使用者輸入的症狀或健康問題，提供條列式或邏輯化的建議回應。  
