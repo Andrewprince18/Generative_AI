@@ -21,7 +21,7 @@
 7. [RAG 音樂推薦系統](#7-RAG-音樂推薦系統)
 8. [AI Agent (CoT任務)](#8-AI-Agent-(CoT任務))
 9. [AI 圖像生成](#9-AI-圖像生成)
-10. [](#)
+10. [Stable Diffusion 插畫生成器](#10-Stable-Diffusion-插畫生成器)
 11. [](#)
 
 ---
@@ -266,7 +266,7 @@ pip install transformers openai langchain pandas
 ### 📂 相關檔案
 - **9_AI_Image_create.ipynb**：執行 AI 繪圖流程的 Notebook，主要負責提示詞設定與圖像生成。  
 
-## 10. Counterfeit V2.5 插畫生成器
+## 10. Stable Diffusion 插畫生成器
 
 **用途**  
 本專案示範如何使用 **Stable Diffusion** 模型 `gsdf/Counterfeit-V2.5`，進行高品質插畫生成。  
