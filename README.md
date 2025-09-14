@@ -174,7 +174,7 @@ pip install requests matplotlib pandas
   - 「悲傷的台灣流行歌」  
 
 ### 系統架構圖
-![RAG 架構](/Users/andrewhsu/Documents/Generative_AI/7_RAG/rag_Image.png)
+![RAG 架構](7_RAG/rag_Image.png)
 
 ---
 
