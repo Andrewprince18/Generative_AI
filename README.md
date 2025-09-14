@@ -18,7 +18,7 @@
 4. [Prompt 測試基準](#4-模型-Prompt-測試基準)  
 5. [互動式對話機器人](#5-互動式對話機器人)
 6. [進階版互動式對話機器人](#6-進階版互動式對話機器人)
-7. [](#)
+7. [RAG 音樂推薦系統](#7-RAG-音樂推薦系統)
 8. [](#)
 9. [](#)
 10. [](#)
@@ -158,7 +158,7 @@ pip install requests matplotlib pandas
    ollama pull gemma3:4b
    ```
 
-## 7. 基於 RAG 的音樂推薦系統
+## 7. RAG 音樂推薦系統
 
 **用途**  
 本專案是一套基於 **Spotify 播放清單資料**的音樂推薦系統。  
@@ -174,7 +174,7 @@ pip install requests matplotlib pandas
   - 「悲傷的台灣流行歌」  
 
 ### 系統架構圖
-![RAG 架構](rag_Image.png)
+![RAG 架構](/Users/andrewhsu/Documents/Generative_AI/7_RAG/rag_Image.png)
 
 ---
 
