@@ -19,7 +19,7 @@
 5. [互動式對話機器人](#5-互動式對話機器人)
 6. [進階版互動式對話機器人](#6-進階版互動式對話機器人)
 7. [RAG 音樂推薦系統](#7-RAG-音樂推薦系統)
-8. [](#)
+8. [AI Agent (CoT任務)](#8-AI-Agent-(CoT任務))
 9. [](#)
 10. [](#)
 11. [](#)
@@ -243,9 +243,12 @@ pip install transformers openai langchain pandas
 
 ### 📘 方法說明
 
-- **Chain-of-Thought 兩階段架構**
-  - 分析 (planner) → 說服 (writer)
-  - 透過分階段推理強化邏輯性，避免單一步驟輸出造成推理缺漏
+Chain-of-Thought 兩階段架構：
 
-- **Reflection 機制**
-  - 檢視並修正前一輪輸出，使結果更貼近需求與事實
+分析 (planner) → 說服 (writer)
+
+避免單一步驟輸出造成缺乏邏輯的問題
+
+Reflection 機制：
+
+可檢視與修正前一輪輸出的內容，使模型更貼近需求
