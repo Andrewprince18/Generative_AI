@@ -157,3 +157,46 @@ pip install requests matplotlib pandas
    nohup ollama serve &
    ollama pull gemma3:4b
    ```
+
+## 7. 基於 RAG 的音樂推薦系統
+
+**用途**  
+本專案是一套基於 **Spotify 播放清單資料**的音樂推薦系統。  
+使用者只需輸入心情描述或偏好條件，系統即可從預先抓取的播放清單資料中檢索並推薦符合情境的歌曲，打造個人化的聆聽體驗。  
+
+**特色**  
+- 使用 Spotify API 搜尋並爬取播放清單與歌曲資料。  
+- 建立以 **心情關鍵字 + 音樂類型** 為基礎的檢索資料集。  
+- 利用 **RAG (Retrieval-Augmented Generation)** 架構，提升推薦的準確性與相關性。  
+- 支援多樣化的輸入，例如：  
+  - 「放鬆」  
+  - 「想提振精神」  
+  - 「悲傷的台灣流行歌」  
+
+### 系統架構圖
+![RAG 架構](rag_Image.png)
+
+---
+
+### ⚙️ 環境需求
+- Python 3.9+  
+- 套件：`spotipy`、`pandas`、`faiss`、`numpy`、`matplotlib`  
+
+### 💻 安裝
+```bash
+pip install spotipy pandas faiss-cpu numpy matplotlib
+```
+
+### ▶️ 使用流程
+
+1. **資料蒐集**  
+   - 使用 `misuc_data_crawling.ipynb`，透過 **Spotify API** 搜尋並爬取播放清單與歌曲資訊。  
+   - 匯出歌曲資料為 **CSV 檔**，作為後續檢索資料來源。  
+
+2. **建立向量資料庫**  
+   - 使用 `RAG_create_database.ipynb`，將歌曲資訊轉換為文本並嵌入向量空間。  
+   - 建立 **FAISS 資料庫**，並儲存於 `faiss_db/`，後續查詢會依此檢索。  
+
+3. **查詢與推薦**  
+   - 使用 `RAG_query_system.ipynb`，輸入使用者需求（心情或音樂風格）。  
+   - 系統會從向量資料庫中找到最相關的歌曲，並輸出推薦清單。  
