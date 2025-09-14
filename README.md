@@ -266,8 +266,35 @@ pip install transformers openai langchain pandas
 ### 📂 相關檔案
 - **9_AI_Image_create.ipynb**：執行 AI 繪圖流程的 Notebook，主要負責提示詞設定與圖像生成。  
 
-### ▶️ 使用方式
-啟動 Notebook：
+## 10. Counterfeit V2.5 插畫生成器
+
+**用途**  
+本專案示範如何使用 **Stable Diffusion** 模型 `gsdf/Counterfeit-V2.5`，進行高品質插畫生成。  
+透過多組輸入/輸出圖像比較，展示提示詞 (prompt) 與風格對生成結果的影響。  
+
+**特色**  
+- 採用 **Counterfeit V2.5** 模型，適合插畫與二次元風格圖像。  
+- 支援輸入提示詞與設定參數，生成符合需求的插畫。  
+- 多組生成結果 (輸入/輸出)，便於比較不同 prompt 與設定的影響。  
+- 可在 Colab 上快速啟動 Web App，進行互動式繪圖。  
+
+### ⚙️ 環境需求
+- Python 3.9+  
+- 套件：`diffusers`、`transformers`、`accelerate`、`safetensors`、`gradio`  
+
+### 💻 安裝
 ```bash
-jupyter notebook 9_AI_Image_create.ipynb
+pip install diffusers transformers accelerate safetensors gradio
 ```
+
+### 🧠 主要參數說明：
+
+| 參數名稱        | 說明 |
+|------------------|------|
+| `prompt`         | 使用者輸入的主提示詞，建議使用英文 |
+| `enhance_text`   | 高品質增強詞，例如：masterpiece、ultra-detailed 等 |
+| `negative_text`  | 排除元素的提示詞，避免錯誤結構或低畫質內容 |
+| `height/width`   | 輸出影像尺寸，需為 8 的倍數（如：512、768）|
+| `steps`          | 推理步數，越多越精緻但花費時間越長 |
+| `num_images`     | 一次生成幾張圖片 |
+| `seed`           | 可固定隨機種子，以利重現相同結果 |
