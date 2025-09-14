@@ -22,7 +22,7 @@
 8. [AI Agent (CoT任務)](#8-AI-Agent-(CoT任務))
 9. [AI 圖像生成](#9-AI-圖像生成)
 10. [Stable Diffusion 插畫生成器](#10-Stable-Diffusion-插畫生成器)
-11. [](#)
+11. [Fooocus Workflow 圖像生成創作](#11-Fooocus-Workflow-圖像生成創作)
 
 ---
 
@@ -298,3 +298,40 @@ pip install diffusers transformers accelerate safetensors gradio
 | `steps`          | 推理步數，越多越精緻但花費時間越長 |
 | `num_images`     | 一次生成幾張圖片 |
 | `seed`           | 可固定隨機種子，以利重現相同結果 |
+
+## 11. Fooocus Workflow 圖像生成創作
+**用途**  
+本專案紀錄使用 **Fooocus** 進行多種圖像生成實驗，探索不同風格設定、Faceswap、人像生成，以及圖片延展 (Outpaint) 的效果。  
+
+**特色**  
+- **風格生成對照實驗**  
+  - 預設風格 → 輸出寫實風格的小青蛙舞蹈場景  
+  - MK Color Sketchnote 風格 → 插畫化、色彩飽和，帶有漫畫式細節  
+- **Faceswap 測試**  
+  - 僅丟入圖片 → 生成結果與原圖人物差異大  
+  - 加入 prompt 與 Faceswap 功能 → 人物五官與風格更接近原圖  
+- **圖片延展 (Outpaint)**  
+  - 測試案例：黑色 Mazda RX7  
+  - Fooocus 成功延伸背景 (天空、公路、地平線)，保持主體一致性  
+
+### ⚙️ 環境需求
+- Fooocus 圖像生成工具  
+- GPU 環境 (建議至少 8GB VRAM)  
+
+### ▶️ 使用方式
+1. 啟動 Fooocus，選擇模型與風格設定  
+2. 輸入文字 Prompt 或上傳圖片  
+3. 可選擇功能：  
+   - **生成插畫/寫實圖片**  
+   - **Faceswap**：提升人像相似度  
+   - **Outpaint**：延展圖片背景與場景  
+
+### 📊 實驗結果摘要
+- **文字生成**：不同風格下的青蛙插畫對照  
+- **Faceswap**：透過 prompt + faceswap，生成更接近原始人物的影像  
+- **Outpaint**：成功延展場景並保持主體穩定  
+
+### 📘 使用心得
+- Fooocus 在文字生成與 Outpaint 上表現自然，生成結果具延續性  
+- Faceswap 能顯著提升人像相似度，但僅靠圖片輸入時結果不穩定  
+- 適合用於 **創意嘗試** 與 **風格比較**，上手容易，靈活度高  
